@@ -1,0 +1,82 @@
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  max-width: 300px;
+  margin: 15px 10px;
+
+  .product-preview {
+    text-decoration: none;
+    height: 300px;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    h3 {
+      color: #111;
+    }
+
+    img {
+      height: 120px;
+      width: 150px;
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-family: "Patrick Hand", cursive;
+      color: #111;
+    }
+
+  }
+  .btns {
+    button {
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+      font-size: 1.3rem;
+      padding: 10px 15px;
+      border: none;
+      outline: #06a821;
+      border-radius: 30px;
+      color: #fff;
+      letter-spacing: 0.3rem;
+      background: linear-gradient(
+        90deg, 
+        rgba(5, 116, 197, 1) 35%,
+        rgba(106, 183, 239, 1) 100%
+      );
+
+      transition: ease-in-out 300ms;
+      &::before {
+        position: absolute;
+        border: 1px solid #fff;
+        left: 5px;
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+        border-radius: 30px;
+        content: "";
+      }
+      &:hover {
+        background: rgb(3, 85, 236);
+      }
+    }
+    a {
+      text-decoration: none;
+      background-color: #25b14385;
+      font-size: 1.3rem;
+      font-family: "Patrick Hand", cursive;
+      color: black;
+      padding: 5px;
+      border-radius: 10px;
+      transition: ease-in-out 300ms;
+
+      &:hover {
+        background-color: #06a821;
+      }
+    }
+  }
+}

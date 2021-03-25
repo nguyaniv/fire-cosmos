@@ -1,0 +1,62 @@
+.sign-up.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(53, 101, 156);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+.redirect{
+  text-align: center;
+  color: rgb(207, 203, 203);
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(33, 53, 141, 0.596);
+  height: 2rem;
+  line-height: 200%;
+  a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+}
+  
+  .card {
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: rgb(16, 27, 100);
+
+    form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .text-inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        input {
+          padding: 10px;
+          margin: 10px 10px;
+          font-size: 1.2rem;
+        }
+      }
+      h1 {
+        text-align: center;
+      }
+      button {
+        padding: 10px;
+        font-size: 1.2rem;
+        border: none;
+        background-color: #4a62a8;
+        color: #fff;
+        transition: ease-in-out 300ms;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(27, 114, 212);
+        }
+      }
+    }
+  }
+}

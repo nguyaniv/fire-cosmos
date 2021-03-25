@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  
+  img {
+    width: 300px;
+  }
+}
+
+.cart-added {
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 10%;
+  left: -420px;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(38, 177, 119, 0.753);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+  transition-timing-function: ease-in-out;
+
+  &.active {
+    left: 0%;
+    z-index: 1;
+
+  }
+}
+
+.cart-error {
+  font-size: 2rem;
+  position: fixed;
+  bottom: 10%;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(167, 179, 174, 0.918);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.products {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+
+  li {
+    button {
+      padding: 3px;
+      margin: 3px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border: 1px solid #111;
+      background: rgb(229, 235, 229);
+      transition: ease-in-out 300ms;
+      &:hover{
+        background: rgb(3, 85, 236);
+        color: #fff;
+
+      }
+
+      &.current-page{
+        background: rgb(3, 85, 236);
+        color: #fff;
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .products-list {
+    width: 100%;
+    justify-content: center;
+    .cart-added {
+      font-size: 1rem;
+      left: -100%;
+      &.active {
+        left: 0%;
+      }
+    }
+  }
+  .products {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}

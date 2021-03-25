@@ -1,0 +1,9 @@
+profile page
+sum all cart's prices
+payment modal
+filters
+sorting
+adding more try and catch
+css mobile pages
+css navbar mobile
+logo 

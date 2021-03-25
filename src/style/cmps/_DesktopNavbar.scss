@@ -1,0 +1,77 @@
+.desktop-navbar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #100820e7;
+  position: fixed;
+  z-index: 1;
+
+  h3 {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .dynamic-links {
+    margin-right: 10%;
+    height: 100%;
+    display: flex;
+    button {
+      border: none;
+      background: rgba(0, 0, 0, 0);
+      color: #fff;
+      font-size: 1.5rem;
+      height: 100%;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 3px solid #fff;
+      }
+      &:focus{
+        border-bottom: 3px solid #fff;
+
+      }
+    }
+
+    .btn-white {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+      height: 100%;
+      line-height:60px;
+      font-size: 1.5rem;
+      &:hover {
+        border-bottom: 3px solid #fff;
+      }
+
+      span {
+        color: #fff;
+        background-color: red;
+        font-size: 1.2rem;
+        padding: 1px;
+        border-radius: 10px;
+        
+      }
+    }
+  }
+
+  .nav-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-link {
+    color: #fff;
+    height: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    &:hover {
+      border-bottom: 3px solid #fff;
+    }
+  }
+}
