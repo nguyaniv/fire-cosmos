@@ -8,9 +8,9 @@ export default function ContactUs() {
         <div className="contact-form">
           <h1>Contact Us</h1>
           <div className="name-subject-email">
-            <input required placeholder="name" type="text" />
-            <input required placeholder="subject" type="text" />
-            <  input required placeholder="email" type="email" />
+            <input required placeholder="Name" type="text" />
+            <input required placeholder="Subject" type="text" />
+            <  input required placeholder="Email" type="email" />
           </div>
           <textarea placeholder="tell us what you think.."></textarea>
 
