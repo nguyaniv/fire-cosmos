@@ -12,20 +12,8 @@ const firebaseConfig = {
     messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
     appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
-// const firebaseConfig = {
-//     apiKey: "AIzaSyBJcnveyQKObQmUTGLPhlswgkVmIPTlaWQ",
-//     authDomain: "fire-cosmos.firebaseapp.com",
-//     databaseURL:
-//         "https://fire-cosmos-default-rtdb.europe-west1.firebasedatabase.app",
-//     projectId: "fire-cosmos",
-//     storageBucket: "fire-cosmos.appspot.com",
-//     messagingSenderId: "815862218362",
-//     appId: "1:815862218362:web:05ef931bcd1a874bc945c3",
-// };
 
-// console.log(firebaseConfig.apiKey);
 console.log(firebaseConfig);
 firebase.initializeApp(firebaseConfig);
-// firebase.firestore();
 export const auth = firebase.auth();
 export default firebase;
