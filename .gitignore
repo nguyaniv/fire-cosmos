@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+.dockerignore
+.Dockerfile.dev
+.Dockerfile.prod
 # production
 /build
 

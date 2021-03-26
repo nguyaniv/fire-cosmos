@@ -16,8 +16,8 @@
 .cart-added {
   font-size: 1.5rem;
   position: fixed;
-  bottom: 10%;
-  left: -420px;
+  left: 43%;
+    bottom: -15%;
   color: #fff;
   text-align: center;
   background-color: rgba(38, 70, 177, 0.753);
@@ -27,7 +27,8 @@
   transition-timing-function: ease-in-out;
 
   &.active {
-    left: 0%;
+    bottom: 15%;
+
     z-index: 1;
 
   }

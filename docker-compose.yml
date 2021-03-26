@@ -1,0 +1,10 @@
+version: "3.2"
+services: 
+  react-app:
+    stdin_open: true
+    tty: true
+    build: 
+      context: .
+      dockerfile: dockerfile.dev
+    env_file:
+      ./.env
