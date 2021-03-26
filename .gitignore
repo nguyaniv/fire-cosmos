@@ -9,12 +9,13 @@
 /coverage
 
 .dockerignore
-/.Dockerfile.dev
-/.Dockerfile.prod
-/.docker-compose-backup.yml
-/.docker-compose-dev.yml
-/.docker-compose-prod.yml
-/.docker-compose.yml
+Dockerfile.dev
+Dockerfile.prod
+docker-compose-backup.yml
+docker-compose-dev.yml
+docker-compose-prod.yml
+docker-compose.yml
+.gitignore
 # production
 /build
 
