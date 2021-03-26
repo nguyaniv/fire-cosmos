@@ -13,7 +13,8 @@ export default function MobileNavbar() {
     const [userMail, setUserMail] = useState(undefined)
     const [sideNav, setSideNav] = useState('')
 
-    const userDoc = userMail ? firebase.firestore().collection("cart").doc(user.currentUser.email).collection("items") : undefined;
+    // const userDoc = userMail ? firebase.firestore().collection("cart").doc(user.currentUser.email).collection("items") : undefined;
+    const itemsColl = userMail ? firebase.firestore().collection("cart").doc(user.currentUser.email).collection("items") : undefined
 
 
 
@@ -24,17 +25,19 @@ export default function MobileNavbar() {
 
 
     const updateCart = () => {
-        if (userDoc === undefined) return
-        userDoc.get().then(async (querySnapshot) => {
+        if (itemsColl === undefined) return
+        itemsColl.get().then(async (querySnapshot) => {
             setUserCart(querySnapshot.size)
         })
     }
     useEffect(() => {
         if (user.currentUser) {
+
             setUserMail(user.currentUser.email);
             updateCart()
         }
-    }, [userDoc])
+    },
+        [itemsColl])
 
 
     return (

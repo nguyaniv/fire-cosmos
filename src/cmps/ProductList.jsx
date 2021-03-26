@@ -49,7 +49,7 @@ export default function ProductList() {
             updateStore()
             setTimeout(() => {
                 setItemAdd(true)
-            }, 3000);
+            }, 1500);
         }
         catch {
             history.push("/login")

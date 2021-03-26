@@ -31,7 +31,7 @@ export default function ProductPage() {
             await setItemAdd(false)
             await setTimeout(() => {
                 setItemAdd(true)
-            }, 3000); 
+            }, 1500); 
         }
         catch {
             return history.push('/login')
@@ -52,12 +52,12 @@ export default function ProductPage() {
                 <h3>{product.name}</h3>
                 <div className="img-arrow-container">
                     {product._id - 1 === 0 ?
-                        <Link to={`/store/${1}`}><FontAwesomeIcon size="lg" icon={faArrowAltCircleLeft} /></Link>
+                        <Link to={`/store/${15}`}><FontAwesomeIcon size="lg" icon={faArrowAltCircleLeft} /></Link>
                         :
                         <Link to={`/store/${product._id - 1}`}><FontAwesomeIcon size="lg" icon={faArrowAltCircleLeft} /></Link>
                     }
                     <img height="300px" width="300px" src={product.url} />
-                    {product._id + 1 === 10 ?
+                    {product._id + 1 === 16 ?
                         <Link to={`/store/${1}`}><FontAwesomeIcon size="lg" icon={faArrowAltCircleRight} /></Link>
                         :
                         <Link to={`/store/${product._id + 1}`}><FontAwesomeIcon size="lg" icon={faArrowAltCircleRight} /></Link>

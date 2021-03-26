@@ -20,7 +20,7 @@
   left: -420px;
   color: #fff;
   text-align: center;
-  background-color: rgba(38, 177, 119, 0.753);
+  background-color: rgba(38, 70, 177, 0.753);
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
@@ -88,12 +88,15 @@
   .products-list {
     width: 100%;
     justify-content: center;
-    .cart-added {
-      font-size: 1rem;
-      left: -100%;
-      &.active {
-        left: 0%;
-      }
+  }
+  .cart-added {
+    font-size: 1rem;
+    left: 20%;
+    bottom: -15%;
+
+    &.active {
+      left: 20%;
+      bottom: 15%;
     }
   }
   .products {
