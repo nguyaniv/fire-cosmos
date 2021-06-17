@@ -29,8 +29,6 @@ export default function SignUp() {
         setLoading(false)
     }
 
-
-
     return (
         <div className="sign-up container">
             <div className="card">

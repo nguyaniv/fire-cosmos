@@ -78,6 +78,7 @@ export default function Cart() {
         // await userDoc.set({
         //     item: firebase.firestore.FieldValue.arrayUnion()
         // })
+        await userDoc.get()
         await updateData()
         await updateStore()
         await updateCart()
